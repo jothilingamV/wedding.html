@@ -1,0 +1,296 @@
+											<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JoeTech Solutions</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0b1120;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+color:#cbd5e1;
+}
+
+.btn{
+padding:14px 30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.hero img{
+width:500px;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:450px;
+border-radius:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+max-width:600px;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+.contact button{
+padding:15px 35px;
+background:#38bdf8;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:30px;
+}
+
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">
+    <img src="joetech-logo.png" alt="JoeTech Solution">
+</div>
+<nav>
+<a href="#Home">Home</a>
+<a href="#About">About</a>
+<a href="#Services">Services</a>
+<a href="#Projects">Projects</a>
+<a href="#Contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="Home">
+
+<div class="hero-text">
+<h1>Build Future With <span>AI & Technology</span></h1>
+
+<p>
+We provide AI Solutions, Web Development,
+Cloud Services and Digital Transformation
+for modern businesses.
+</p>
+
+<a href="#Contact" class="btn">Get Started</a>
+</div>
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+alt="IT Company">
+
+</section>
+
+<section id="Services">
+																															
+<h2 class="title">Our Services</h2>
+
+<div class="Services">
+
+</div>
+
+<div class="card">
+<h3>AI Solutions</h3>
+<p>Custom AI and Chatbot Development.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>Modern responsive websites and portals.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Services</h3>
+<p>AWS, Azure and Cloud Migration.</p>
+</div>
+
+<div class="card">
+<h3>Cyber Security</h3>
+<p>Protect your business with advanced security.</p>
+</div>
+
+</div>
+</section>
+
+<section id="About" class="about">           	
+
+<div>
+<h2>About Our Company</h2>
+<br>
+<p>
+TechNova is a leading IT company delivering
+AI-powered business solutions worldwide.
+</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800">
+
+</section>
+
+<section id="Projects">
+
+<h2 class="title">Our Projects</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>E-Commerce Website</h3>
+<p>Online shopping platform development.</p>
+</div>
+
+<div class="card">
+<h3>AI Chatbot</h3>
+<p>Customer support automation system.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Migration</h3>
+<p>Enterprise cloud transformation.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="Contact" class="contact">
+<h2 class="title">Contact Us</h2>
+
+<input type="text" placeholder="Your Name">
+<br>
+
+<input type="email" placeholder="Your Email">
+<br>
+
+<textarea rows="5" placeholder="Message"></textarea>
+<br>
+
+<button>Send Message</button>
+
+</section>
+
+<script>
+document.querySelector(".contact button").addEventListener("click",function(){
+alert("Message Sent Successfully!");
+});
+</script>
+
+<footer>
+© 2026 JoeTech Solutions | All Rights Reserved
+</footer>
+
+</body>
+</html>
